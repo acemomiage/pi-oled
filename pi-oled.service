@@ -1,0 +1,14 @@
+[Unit]
+Description=display system info to OLED.
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/home/pi/venv/pi-oled/bin/python3 /home/pi/work/repo/github.com/pi-oled/pi-oled.py -i eth0
+#ExecStop=/bin/kill -TERM $MAINPID
+Restart=on-failure
+User=pi
+WorkingDirectory = /tmp/
+
+[Install]
+WantedBy=multi-user.target

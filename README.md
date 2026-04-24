@@ -1,8 +1,8 @@
 ### package installation
 
 ```
-$ python3 -m venv --copies $HOME/venv/oled-ip-show
-$ source $HOME/venv/oled-ip-show/bin/activate
+$ python3 -m venv --copies $HOME/venv/pi-oled
+$ source $HOME/venv/pi-oled/bin/activate
 $ pip install adafruit-circuitpython-ssd1306 lgpio pillow psutil
 ```
 
